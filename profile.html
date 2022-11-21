@@ -8,6 +8,7 @@
   
   <title>REalVIEW</title>
   <script type="module" crossorigin src="./assets/js/profile.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/js/modulepreload-polyfill.js">
   <link rel="modulepreload" crossorigin href="./assets/js/jquery.js">
   <link rel="stylesheet" href="./assets/profile.css">
   <link rel="stylesheet" href="./assets/custom.css">
@@ -22,7 +23,7 @@
           <div class="thumb">
             <img src="./assets/images/avatar-profile.jpg" alt="">
           </div>
-          <a href="profile-edit.html" class="button xxsmall rounded w-22 text-xs">แก้ไขโปรไฟล์</a>
+          <a href="edit-profile.html" class="button xxsmall rounded w-22 text-xs">แก้ไขโปรไฟล์</a>
         </div>
       </div>
     </header>
@@ -378,7 +379,7 @@
     <div class="container px-0">
 
       <ul class="footer--navigator">
-        <li class="active">
+        <li>
           <a href="home.html">
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -389,7 +390,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="explore.html">
             <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M3.08333 18.25H15.9167C16.9292 18.25 17.75 17.4292 17.75 16.4167V3.58333C17.75 2.57081 16.9292 1.75 15.9167 1.75H3.08333C2.07081 1.75 1.25 2.57081 1.25 3.58333V16.4167C1.25 17.4292 2.07081 18.25 3.08333 18.25ZM3.08333 18.25L13.1667 8.16667L17.75 12.75M7.66667 6.79167C7.66667 7.55106 7.05106 8.16667 6.29167 8.16667C5.53228 8.16667 4.91667 7.55106 4.91667 6.79167C4.91667 6.03228 5.53228 5.41667 6.29167 5.41667C7.05106 5.41667 7.66667 6.03228 7.66667 6.79167Z"
@@ -399,7 +400,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="search.html">
             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1347_1725)">
                 <path
@@ -441,7 +442,7 @@
             <span>Notification</span>
           </a>
         </li>
-        <li>
+        <li class="active">
           <a href="profile.html">
             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -456,7 +457,7 @@
     </div>
 
   </footer>
-  
+
   <header id="sub--menu" class="sub--menu ">
     <div class="box--member box--edit flex flex-col gap-3">
       <h2 class="my-4">จัดการโพสต์ของคุณ</h2>
@@ -464,7 +465,6 @@
       <a href="#" class="button">ลบโพสต์</a>
     </div>
   </header>
-
   
 </body>
 
