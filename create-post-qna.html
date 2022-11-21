@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="./assets/icon/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <title>REalVIEW</title>
+  <script type="module" crossorigin src="./assets/js/modulepreload-polyfill.js"></script>
+  <script type="module" crossorigin src="./assets/js/create-post.js"></script>
+  <link rel="stylesheet" href="./assets/create-post.css">
+  <link rel="stylesheet" href="./assets/select2.css">
+  <link rel="stylesheet" href="./assets/custom.css">
+</head>
+
+<body>
+
+  <div id="content">
+    <header class="header--navi">
+      <div class="container">
+        <a href="home.html">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5 9.5L9.5 15.5M9.5 9.5L15.5 15.5M22.5 12.5C22.5 18.0228 18.0228 22.5 12.5 22.5C6.97715 22.5 2.5 18.0228 2.5 12.5C2.5 6.97715 6.97715 2.5 12.5 2.5C18.0228 2.5 22.5 6.97715 22.5 12.5Z"
+              stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <h1>สร้างคำถาม</h1>
+        <a href="home.html" class="button xsmall w-16 rounded-full">โพสต์</a>
+      </div>
+    </header>
+    <hr>
+    <div class="body--form">
+      <div class="container py-4">
+        <!-- POST INFO -->
+        <div class="post--info flex gap-2 w-full">
+          <div class="thumbnail">
+            <img src="./assets/images/avatar-3.jpg" alt="" class="w-10 h-10 rounded-full">
+            <i class="fav"></i>
+          </div>
+          <div class="info--title w-full">
+            <div class="post--title">
+              <div class="title">
+                Sushada
+              </div>
+              <ul>
+                <li>White mage</li>
+              </ul>
+            </div>
+            <div class="text-xs">สภาพผิว ผิวมัน</div>
+          </div>
+        </div>
+      </div>
+      <!-- POST INFO -->
+      <hr>
+      <div class="container">
+        <div class="form-control no-line">
+          <input type="text" placeholder="หัวข้อคำถาม">
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+        <div class="form-control no-line">
+          <textarea placeholder="ข้อความ" rows="5"></textarea>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <header id="sub--menu" class="sub--menu">
+    <div class="box--member flex flex-col gap-3">
+      <a href="home.html" class="button">ยกเลิกโพสต์</a>
+      <a href="#" class="cancel button">สร้างโพสต์ต่อ</a>
+    </div>
+  </header>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  
+</body>
+
+</html>

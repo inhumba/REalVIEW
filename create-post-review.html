@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="./assets/icon/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <title>REalVIEW</title>
+  <script type="module" crossorigin src="./assets/js/modulepreload-polyfill.js"></script>
+  <script type="module" crossorigin src="./assets/js/create-post.js"></script>
+  <link rel="stylesheet" href="./assets/create-post.css">
+  <link rel="stylesheet" href="./assets/select2.css">
+  <link rel="stylesheet" href="./assets/custom.css">
+</head>
+
+<body class="create--post">
+
+  <div id="content">
+    <header class="header--navi">
+      <div class="container">
+        <a href="#" class="cancel">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5 9.5L9.5 15.5M9.5 9.5L15.5 15.5M22.5 12.5C22.5 18.0228 18.0228 22.5 12.5 22.5C6.97715 22.5 2.5 18.0228 2.5 12.5C2.5 6.97715 6.97715 2.5 12.5 2.5C18.0228 2.5 22.5 6.97715 22.5 12.5Z"
+              stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <h1>สร้างรีวิว</h1>
+        <a href="#" class="button xsmall w-16 rounded-full next">ต่อไป</a>
+      </div>
+    </header>
+    <hr>
+    <div class="body--form review review--1">
+      <div class="container">
+        <div class="form-control input">
+          <label for="product">ชื่อผลิตภัณฑ์</label>
+          <select class="select--search" name="state[]" placeholder="กรุณากรอกชื่อผลิตภัณฑ์">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select>
+        </div>
+        <div class="form-control input">
+          <label for="product">ชื่อยี่ห้อ</label>
+          <select class="select--search" name="state[]" placeholder="กรุณากรอกชื่อยี่ห้อ">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select>
+        </div>
+        <div class="form-control input">
+          <label for="product">ชื่อรุ่น</label>
+          <select class="select--search" name="state[]" placeholder="กรุณากรอกชื่อรุ่น">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select>
+        </div>
+        <div class="form-control input">
+          <label for="product">ชื่อรุ่นย่อย</label>
+          <select class="select--search" name="state[]" placeholder="กรุณากรอกชื่อรุ่นย่อย">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select>
+        </div>
+        <div class="form-control input">
+          <label for="product">คุณสมบัติ</label>
+          <select class="select--search" name="state[]" placeholder="กรุณากรอกคุณสมบัติ">
+            <option value=""></option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select>
+        </div>
+
+        <div class="form-control rate--group input flex gap-4">
+          <div class="text-sm">ความประทับใจ</div>
+          <div class="form-group">
+            <input type="radio" name="rate" id="rate-1" value="rate-1">
+            <label for="rate-1">
+              <img src="./assets/images/rate-1.jpg">
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="rate" id="rate-2" value="rate-2">
+            <label for="rate-2">
+              <img src="./assets/images/rate-2.jpg">
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="rate" id="rate-3" value="rate-1">
+            <label for="rate-3">
+              <img src="./assets/images/rate-3.jpg">
+            </label>
+          </div>
+        </div>
+        <div class="form-control -mb-2">
+          <div class="sponsored--group w-full flex gap-4">
+            <div class="form-group w-1/2">
+              <input type="checkbox" name="sponsored" id="no-spon">
+              <label for="no-spon" class="button w-full">ออกเงินเองจ้า</label>
+            </div>
+            <div class="form-group w-1/2">
+              <input type="checkbox" name="sponsored" id="spon">
+              <label for="spon" class="button w-full">มีสปอนเซอร์จ้า</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-2"><a href="add-product.html" class="text-main text-sm">ไม่พบสินค้าที่ต้องการรีวิว?</a></div>
+    </div>
+    <div class="body--form review review--2">
+      <div class="container py-4">
+        <!-- POST INFO -->
+        <div class="post--info flex gap-2 w-full">
+          <div class="thumbnail">
+            <img src="./assets/images/avatar-3.jpg" alt="" class="w-10 h-10 rounded-full">
+            <i class="fav"></i>
+          </div>
+          <div class="info--title w-full">
+            <div class="post--title">
+              <div class="title">
+                Sushada
+              </div>
+              <ul>
+                <li>White mage</li>
+              </ul>
+            </div>
+            <div class="text-xs">สภาพผิว ผิวมัน</div>
+          </div>
+        </div>
+      </div>
+      <!-- POST INFO -->
+      <hr>
+      <div class="container">
+        <div class="form-control no-line">
+          <textarea placeholder="กรุณาใส่ข้อความในรีวิว" rows="10"></textarea>
+        </div>
+      </div>
+      <hr class="thick">
+      <div class="container py-3">
+        <div class="form-control file">
+          <label for="image"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21ZM5 21L16 10L21 15M10 8.5C10 9.32843 9.32843 10 8.5 10C7.67157 10 7 9.32843 7 8.5C7 7.67157 7.67157 7 8.5 7C9.32843 7 10 7.67157 10 8.5Z"
+                stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </label>
+          <input type="file" id="image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <header id="sub--menu" class="sub--menu">
+    <div class="box--member flex flex-col gap-3">
+      <a href="home.html" class="button">ยกเลิกโพสต์</a>
+      <a href="#" class="cancel button">สร้างโพสต์ต่อ</a>
+    </div>
+  </header>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  
+</body>
+
+</html>
