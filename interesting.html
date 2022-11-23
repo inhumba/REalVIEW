@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>REalVIEW</title>
+  <script type="module" crossorigin src="./assets/js/interesting.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/js/modulepreload-polyfill.js">
+  <link rel="modulepreload" crossorigin href="./assets/js/jquery.js">
   <link rel="stylesheet" href="./assets/interesting.css">
   <link rel="stylesheet" href="./assets/custom.css">
 </head>
@@ -20,57 +23,61 @@
   </div>
   <div class="container py-2">
     <p class="text-default text-sm mt-2 mb-6">เพื่อให้เราสามารถปรับแต่งเนื้อหา และส่งให้คุณได้อย่างถูกต้อง</p>
-    <div class="grid grid-cols-3 xs:grid-cols-4 gap-4 mb-4">
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-1" checked>
-        <label for="chekcbox-1" style="background-image: url(https://via.placeholder.com/150);"></label>
+    <form action="">
+      <div class="grid grid-cols-3 xs:grid-cols-4 gap-4 mb-4">
+
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-1" checked="checked">
+          <label for="chekcbox-1" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-2">
+          <label for="chekcbox-2" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-3">
+          <label for="chekcbox-3" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-4" checked="checked">
+          <label for="chekcbox-4" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-5" checked="checked">
+          <label for="chekcbox-5" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-6">
+          <label for="chekcbox-6" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-7">
+          <label for="chekcbox-7" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-8">
+          <label for="chekcbox-8" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-9" checked="checked">
+          <label for="chekcbox-9" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-10">
+          <label for="chekcbox-10" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-11">
+          <label for="chekcbox-11" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+        <div class="form-control checkbox--fav">
+          <input type="checkbox" id="chekcbox-12">
+          <label for="chekcbox-12" style="background-image: url(https://via.placeholder.com/150);"></label>
+        </div>
+
       </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-2">
-        <label for="chekcbox-2" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-3">
-        <label for="chekcbox-3" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-4" checked>
-        <label for="chekcbox-4" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-5" checked>
-        <label for="chekcbox-5" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-6">
-        <label for="chekcbox-6" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-7">
-        <label for="chekcbox-7" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-8">
-        <label for="chekcbox-8" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-9" checked>
-        <label for="chekcbox-9" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-10">
-        <label for="chekcbox-10" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-11">
-        <label for="chekcbox-11" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-      <div class="form-control checkbox--fav">
-        <input type="checkbox" id="chekcbox-12">
-        <label for="chekcbox-12" style="background-image: url(https://via.placeholder.com/150);"></label>
-      </div>
-    </div>
-    <a href="home.html" class="button small rounded block">เรียบร้อย</a>
+      <button class="button small rounded block" type="submit">เรียบร้อย</button>
+    </form>
   </div>
 </body>
 
