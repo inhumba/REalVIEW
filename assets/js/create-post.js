@@ -67,4 +67,14 @@ $(document).ready((function () {
             $(".cancel-btn").hide()
         }
     })
+
+    $("input[type=radio]").on("change", function () {
+        var inputName = $(this).attr("name")
+        $("input[name=" + inputName + "]").removeAttr("checked","checked")
+        if ( $(this).is(":checked") ) {
+            $(this).attr("checked","checked")
+        } else {
+            $(this).removeAttr("checked","checked")
+        }
+    })
 }));
